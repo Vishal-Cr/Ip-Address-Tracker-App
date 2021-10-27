@@ -8,6 +8,7 @@
   background-image: url('./components/Assets/images/pattern-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
+  transition:all 0.8s ease;
 }
 .heading{
   font-size: 1.5rem;

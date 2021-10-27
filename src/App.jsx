@@ -19,11 +19,12 @@ https://geo.ipify.org/api/v1?apiKey=${import.meta.env.VITE_TOKEN}`;
     isp:'' 
   });
   
-const[cordinates,setCordinates]=React.useState({
-  latitude:'',
-  longitude:''
-})
 
+const [mapViewport,setMapViewport]=React.useState({
+  latitude:'',
+  longitude:'',
+ 
+});
   React.useEffect(() => {
         
        async function fetchMyApi(){
@@ -33,16 +34,23 @@ const[cordinates,setCordinates]=React.useState({
       
      
       const{ip,location,timezone,isp}=response.data;
-     console.log(response.data)
-    setCordinates({latitude:location['lat'],longitude:location['lng']});
-    
-     
-      setIpData({ip:ip,location:location['region']+','+location['city']+','+location['country'],timezone:location['timezone'],isp:isp})
-    
+      
      
       
+      setIpData({
+        ip:ip,
+        location:location['region']+','+location['city']+','+location['country'],
+        timezone:location['timezone'],
+        isp:isp
+      })
+     
+      setMapViewport({
+        latitude:location['lat'],
+        longitude:location['lng'],
       
-   }
+      })
+      console.log(mapViewport);
+     }
    )
 .catch((e)=>console.log(e));
      }
@@ -51,12 +59,23 @@ const[cordinates,setCordinates]=React.useState({
 }, []);
 
 
+
+ 
+
+
+
+   
+
 const inputSubmitHandler=(inputValue)=>{
 
   const{ip,location,timezone,isp}=inputValue;
  
   setIpData({ip:ip,location:location['region']+','+location['city']+','+location['country'],timezone:location['timezone'],isp:isp});
+  setMapViewport({
+    latitude:location['lat'],
+    longitude:location['lng'],
   
+  })
 }
 
 
@@ -72,21 +91,12 @@ const inputSubmitHandler=(inputValue)=>{
 
 
 
-<div style={{height:'20vh',widht:'50vw',color:'#333'}}>
+<div style={{height:'10vh',widht:'50vw',color:'#333'}}>
 
 
-{ !cordinates['latitude']  ? <img src={Spinner} alt="" /> : <Map mapCords={cordinates} />   }
+{ !mapViewport['latitude']  ? <img src={Spinner} alt="" /> : <Map  mapView={mapViewport}/>   }
 
 </div>
-
-
-
- 
-
-
-
-
-
 </>
 
 

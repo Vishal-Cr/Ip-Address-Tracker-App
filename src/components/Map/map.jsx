@@ -1,19 +1,21 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React  from 'react';
 import Icon_Location from '../Assets/images/icon-location.svg';
 import ReactMapGl,{Marker} from 'react-map-gl';
 
 
 const map = (props) => {
-    const{latitude,longitude}=props.mapCords
-
-    console.log(latitude,longitude)
-    const [viewport,setViewport]=useState({
-       latitude:latitude,
-       longitude:longitude,
-        zoom:10,
-   width:'100vw',
-   height:'100vh'
+    
+    const{latitude,longitude}=props.mapView;
+    
+    console.log(props);
+    const [viewport,setViewport]=React.useState({
+      latitude:latitude,
+      longitude:longitude,
+      zoom:-10,
+      width:'100vw',
+      height:'100vh'
     });
+
     return (
         <>
  
@@ -30,14 +32,14 @@ latitude={latitude}
 longitude={longitude}
 >
 <div>
-  <img src={Icon_Location} style={{width:'1.5rem',height:'1.5rem'}} alt="" />
+  <img src={Icon_Location} style={{width:'1rem',height:'1rem'}} alt="" />
   </div>
 
 </Marker>
  
  </ReactMapGl> 
  
-            
+          
         </> 
        
     )
