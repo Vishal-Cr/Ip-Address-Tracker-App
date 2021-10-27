@@ -54,6 +54,7 @@ const[cordinates,setCordinates]=React.useState({
 const inputSubmitHandler=(inputValue)=>{
 
   const{ip,location,timezone,isp}=inputValue;
+ 
   setIpData({ip:ip,location:location['region']+','+location['city']+','+location['country'],timezone:location['timezone'],isp:isp});
   
 }
@@ -71,11 +72,11 @@ const inputSubmitHandler=(inputValue)=>{
 
 
 
-<div style={{height:'50vh',widht:'50vw',color:'#333'}}>
-{/* {console.log(latitude,longitude)} */}
+<div style={{height:'20vh',widht:'50vw',color:'#333'}}>
 
-{ !cordinates['latitude']  ? <img src={Spinner} alt="" /> : <Map mapCords={cordinates} style={{background:'blue'}} />   }
-{/* {!cordinates['latitude'] ?<img src={Spinner} alt="" />: <h1>Map</h1>} */}
+
+{ !cordinates['latitude']  ? <img src={Spinner} alt="" /> : <Map mapCords={cordinates} />   }
+
 </div>
 
 

@@ -16,10 +16,10 @@ const map = (props) => {
     });
     return (
         <>
- <p style={{opacity:'0.5',textAlign:'left'}}>Take Pointer to the Bottom to Interacte with Map.</p>
+ 
  <ReactMapGl {...viewport} 
  mapboxApiAccessToken={import.meta.env.VITE_MAP_TOKEN}
- mapStyle="mapbox://styles/vishal-anthony/ckv7xan3o90xn14o36hlmme99"
+ mapStyle="mapbox://styles/mapbox/streets-v11"
   style={{position:'relative',top:'-7rem',zIndex:'-1'}}
  onViewportChange={viewport=>{
    setViewport(viewport)

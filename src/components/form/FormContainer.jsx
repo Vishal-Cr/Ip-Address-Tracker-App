@@ -70,10 +70,7 @@ console.log(e);
               </Div>
        
        </form> 
-       {/* <div>
-       
-        <Card cardData={dataHandler(ipData)}/>
-       </div> */}
+      
         </>
     )
 }
