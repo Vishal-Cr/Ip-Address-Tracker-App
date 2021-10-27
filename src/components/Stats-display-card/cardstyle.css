@@ -1,0 +1,52 @@
+small {
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: -20px;
+    color: hsl(0, 0%, 59%);
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    font-size: 13px;
+    width: 85%;
+    padding: 0 0.5rem;
+
+}
+
+.info {
+    width: 90vw;
+}
+
+
+
+.info p {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    word-break: break-all;
+    word-wrap: break-word;
+    color: hsl(0, 0%, 17%);
+    font-weight: 500;
+
+
+}
+
+p {
+    font-size: 1.5vw;
+    overflow-wrap: break-word;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    letter-spacing: 1.5;
+}
+
+.isp {
+    width: 90%;
+}
+
+.loading_spinner {
+    width: 50%;
+
+
+
+}

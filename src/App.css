@@ -1,0 +1,17 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500;600;700&display=swap');
+.App {
+  font-family: 'Rubik';
+  text-align: center;
+  color:#fff;
+  height:48vh;
+  background-image: url('./components/Assets/images/pattern-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.heading{
+  font-size: 1.5rem;
+  padding:1rem;
+  font-weight: 500;
+  
+}
