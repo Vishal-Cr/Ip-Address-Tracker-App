@@ -14,20 +14,25 @@ const card = (props) => {
         <Card className='card'>
         
        <Infodiv className="info">
-                <small>IP ADDRESS</small>
+            
+                  <small>IP ADDRESS</small>
               
                 <p>{!ip ? <img className='loading_spinner' src={spinner}/> : ip }</p>
+            
                 </Infodiv>
+            
                 <Divider/>
+            
             <Infodiv className="info">
-                
-
+            
                 <small>LOCATION</small>
+            
                 <p>{!location?<img className='loading_spinner' src={spinner}/>:location}</p>
                
               
             </Infodiv>
                 <Divider/>
+
             <Infodiv className="info">
                
                

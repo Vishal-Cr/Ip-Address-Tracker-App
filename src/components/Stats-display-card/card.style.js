@@ -8,24 +8,48 @@ export const Card = styled.div`
   color: hsl(0, 0%, 17%);
   margin: 0 auto;
   margin-top: 3rem;
-  border-radius: 15px;
-  padding-left: 1.5rem;
-  height: 7.5rem;
+  border-radius: 13px;
+  padding: 0 1rem;
+  height: 5rem;
   width: 75vw;
+  position: relative;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  @media only screen and (min-width: 500px) and (max-width: 800px) {
+    width: 45vw;
+    flex-direction: column;
+    height: 15rem;
+  }
+  @media only screen and (min-width: 300px) and (max-width: 500px) {
+    width: 85vw;
+    height: 45vh;
+    flex-direction: column;
+  }
 `;
 export const Infodiv = styled.div`
-  display: flex;
-  align-items: left;
-  justify-content: left;
-  flex-direction: column;
-  width: 30%;
+  width: 100%;
   word-break: break-all;
-  padding: 1rem;
   position: relative;
+  height: 100%;
+  @media only screen and (min-width: 500px) and (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  @media only screen and (min-width: 300px) and (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 export const Divider = styled.div`
-  margin: 1rem;
+  margin: 0 0.9rem;
   border-left: 0.1px solid hsl(0, 0%, 59%);
-  height: 58px;
+  height: 48px;
   left: 50%;
+  opacity: 0.4;
+  @media only screen and (max-width: 800px) {
+    display: none;
+  }
 `;

@@ -11,8 +11,30 @@
   transition:all 0.8s ease;
 }
 .heading{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding:1rem;
-  font-weight: 500;
-  
-}
+  font-weight: 400;
+
+  }
+
+  @media only screen and (min-width:500px) and (max-width: 800px) {
+    .heading {
+      font-size: 1.3rem;
+      padding: 1rem;
+      font-weight: 400;
+    }
+
+    .App {
+      height: 30vh;
+      width: 100vw;
+
+    }
+  }
+
+  @media only screen and (min-width: 300px) and (max-width:'500px') {
+    .App {
+
+       height: 50vh;
+       width: 100vw;
+       }
+       }

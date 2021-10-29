@@ -31,7 +31,7 @@ const [mapViewport,setMapViewport]=React.useState({
 
       const dataFetch= await axios.get(address)
       .then((response)=>{
-      
+
      
       const{ip,location,timezone,isp}=response.data;
       
@@ -39,7 +39,7 @@ const [mapViewport,setMapViewport]=React.useState({
       
       setIpData({
         ip:ip,
-        location:location['region']+','+location['city']+','+location['country'],
+        location:location['city']+','+location['region'],
         timezone:location['timezone'],
         isp:isp
       })
