@@ -98,11 +98,7 @@ const inputSubmitHandler=(inputValue)=>{
 
 </div>
 
-<button className='top' >
-  <a href="#app-id">
-    Goto Top
-  </a>
-</button>
+
 
 
   

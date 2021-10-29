@@ -16,21 +16,7 @@
   font-weight: 400;
 
   }
-  .top {
-    display: none;
-    padding: 0.2rem;
-    scroll-behavior: smooth;
-    transition: all 0.5s ease;
-    border-radius: 5px;
-    z-index: 2;
-    background: #fff;
-    font-weight: 600;
-  }
 
-  .top a {
-    text-decoration: none;
-    color: #333;
-  }
 
   @media (min-width:500px) and (max-width: 800px) {
     .heading {
@@ -47,9 +33,5 @@
   }
 
   @media(min-width:250px) and (max-width:500px) {
-    .top {
 
-     display: block;
-     margin:0 auto;
-     }
        }
