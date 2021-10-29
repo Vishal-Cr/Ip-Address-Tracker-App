@@ -16,8 +16,23 @@
   font-weight: 400;
 
   }
+  .top {
+    display: none;
+    padding: 0.2rem;
+    scroll-behavior: smooth;
+    transition: all 0.5s ease;
+    border-radius: 5px;
+    z-index: 2;
+    background: #fff;
+    font-weight: 600;
+  }
 
-  @media only screen and (min-width:500px) and (max-width: 800px) {
+  .top a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  @media (min-width:500px) and (max-width: 800px) {
     .heading {
       font-size: 1.3rem;
       padding: 1rem;
@@ -31,10 +46,10 @@
     }
   }
 
-  @media only screen and (min-width: 300px) and (max-width:'500px') {
-    .App {
+  @media(min-width:250px) and (max-width:500px) {
+    .top {
 
-       height: 50vh;
-       width: 100vw;
-       }
+     display: block;
+     margin:0 auto;
+     }
        }

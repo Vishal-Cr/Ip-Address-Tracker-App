@@ -80,9 +80,9 @@ const inputSubmitHandler=(inputValue)=>{
 
 
   return (
-    <div className="App">
-<> 
-<h1 className='heading'>IP Address Tracker</h1>
+    <div className="App" >
+
+<h1 className='heading' id="app-id">IP Address Tracker</h1>
 
 
 <Form  ipId={ipData['ip']} formHandler={inputSubmitHandler}/>
@@ -91,13 +91,18 @@ const inputSubmitHandler=(inputValue)=>{
 
 
 
-<div style={{height:'10vh',widht:'50vw',color:'#333'}}>
+<div style={{width:'50vw',height:'50vh',color:'#333'}}>
 
 
 { !mapViewport['latitude']  ? <img src={Spinner} alt="" /> : <Map  mapView={mapViewport}/>   }
 
 </div>
-</>
+
+<button className='top' >
+  <a href="#app-id">
+    Goto Top
+  </a>
+</button>
 
 
   

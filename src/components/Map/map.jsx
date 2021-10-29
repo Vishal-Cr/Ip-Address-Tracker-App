@@ -13,7 +13,7 @@ const map = (props) => {
       longitude:longitude,
       zoom:10,
       width:'100vw',
-      height:'150vh'
+      height:'90vh'
     });
 
     return (
@@ -33,9 +33,9 @@ latitude={latitude}
 longitude={longitude}
 
 >
-<div>
+
   <img src={Icon_Location} className='map_pointer' alt="map-Pointer" />
-  </div>
+
 
 </Marker>
  

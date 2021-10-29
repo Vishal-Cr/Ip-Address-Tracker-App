@@ -3,11 +3,13 @@
     top: -7rem;
     z-index: -1;
     height: 100vh;
+    overflow-y:hidden;
 }
 
 .map_pointer {
     width: 1rem;
     height: 1rem;
+    position:fixed;
 }
 
 @media only screen and (min-width: 500px) and (max-width:800px) {
@@ -19,6 +21,7 @@
     .map_pointer {
         width: 1.5rem;
         height: 1.5rem;
+        position:fixed;
     }
 
 }
@@ -35,6 +38,7 @@
     .map_pointer {
         width: 1rem;
         height: 1rem;
+        position:fixed;
     }
 
 }
