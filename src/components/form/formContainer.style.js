@@ -54,6 +54,7 @@ import styled from 'styled-components';
      width: 70vw;
      border-top-left-radius: 18px;
      border-bottom-left-radius: 18px;
+     padding: 0.5rem;
 
      ::-webkit-input-placeholder {
        font-size: auto;
