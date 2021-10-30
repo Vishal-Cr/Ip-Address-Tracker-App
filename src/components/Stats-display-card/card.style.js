@@ -55,6 +55,9 @@ export const Infodiv = styled.div`
     width: 100%;
     padding: 0.5rem;
   }
+  @media (min-width: 1440px) {
+    padding: 0.6rem;
+  }
 `;
 export const Divider = styled.div`
   margin: 0 0.9rem;
