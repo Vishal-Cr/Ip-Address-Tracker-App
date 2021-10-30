@@ -14,15 +14,24 @@ export const Card = styled.div`
   width: 75vw;
   position: relative;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-  @media only screen and (min-width: 500px) and (max-width: 800px) {
+  @media (min-width: 800px) and (max-width: 1440px) {
+    height: 8rem;
+    width: 80vw;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  }
+  @media (min-width: 500px) and (max-width: 800px) {
     width: 45vw;
     flex-direction: column;
     height: 15rem;
   }
-  @media only screen and (min-width: 300px) and (max-width: 500px) {
+  @media (min-width: 300px) and (max-width: 500px) {
     width: 85vw;
     height: 45vh;
     flex-direction: column;
+  }
+  @media (min-width: 1440px) {
+    height: 8rem;
+    border-radius: 20px;
   }
 `;
 export const Infodiv = styled.div`
@@ -42,6 +51,10 @@ export const Infodiv = styled.div`
     justify-content: center;
     align-items: center;
   }
+  @media (min-width: 800px) and (max-width: 1440px) {
+    width: 100%;
+    padding: 0.5rem;
+  }
 `;
 export const Divider = styled.div`
   margin: 0 0.9rem;
@@ -49,7 +62,11 @@ export const Divider = styled.div`
   height: 48px;
   left: 50%;
   opacity: 0.4;
-  @media only screen and (max-width: 800px) {
+  @media (max-width: 800px) {
     display: none;
+  }
+  @media (min-width: 800px) and (max-width: 1440px) {
+    height: 80px;
+    opacity: 0.6;
   }
 `;

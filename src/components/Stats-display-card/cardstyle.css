@@ -29,7 +29,7 @@ small {
     width: 50%;
 }
 
-@media only screen and (max-width: 800px) {
+@media (max-width: 800px) {
     .loading_spinner {
         width: 20%;
         margin: 0 auto;
@@ -45,5 +45,38 @@ small {
 
     p {
         font-size: 5vw;
+    }
+}
+@media(min-width:1440px) {
+    small {
+        font-size: 12px;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .loading_spinner {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+@media(min-width:800px) and (max-width:1440px) {
+    small {
+        font-size: 12px;
+        margin-right: 0.2rem;
+
+    }
+
+    p {
+        font-size: 20px;
+        margin-right: 0.2rem;
+        font-weight: 800;
+    }
+
+    .loading_spinner {
+        width: 50%;
+        margin: 0 auto;
     }
 }

@@ -24,7 +24,20 @@ import styled from 'styled-components';
    &:focus {
      outline: none;
    }
-   @media only screen and (min-width: 500px) and (max-width: 800px) {
+   @media (min-width: 800px) and (max-width: 1440px) {
+     height: 3rem;
+     width: 35vw;
+     border-top-left-radius: 18px;
+     border-bottom-left-radius: 18px;
+     margin-top: 15px;
+     ::-webkit-input-placeholder {
+       font-size: auto;
+     }
+     ::-ms-input-placeholder {
+       font-size: auto;
+     }
+   }
+   @media (min-width: 500px) and (max-width: 800px) {
      height: 3rem;
      width: 35vw;
      border-top-left-radius: 18px;
@@ -41,12 +54,24 @@ import styled from 'styled-components';
      width: 70vw;
      border-top-left-radius: 18px;
      border-bottom-left-radius: 18px;
+
+     ::-webkit-input-placeholder {
+       font-size: auto;
+     }
+     ::-ms-input-placeholder {
+       font-size: auto;
+     }
    }
-   ::-webkit-input-placeholder {
-     font-size: auto;
-   }
-   ::-ms-input-placeholder {
-     font-size: 8px;
+   @media (min-width: 1440px) {
+     height: 3rem;
+     border-top-left-radius: 18px;
+     border-bottom-left-radius: 18px;
+     ::-webkit-input-placeholder {
+       font-size: auto;
+     }
+     ::-ms-input-placeholder {
+       font-size: auto;
+     }
    }
  `;
  export const Div = styled.div`
@@ -69,17 +94,30 @@ import styled from 'styled-components';
    &:hover {
      background: hsl(0, 0%, 59%);
    }
-   @media only screen and (min-width: 500px) and (max-width: 800px) {
+   @media (min-width: 800px) and (max-width: 1440px) {
+     height: 3rem;
+     width: 3rem;
+     border-top-right-radius: 18px;
+     border-bottom-right-radius: 18px;
+     margin-top: 15px;
+   }
+   @media (min-width: 500px) and (max-width: 800px) {
      height: 3rem;
      width: 3rem;
      border-top-right-radius: 18px;
      border-bottom-right-radius: 18px;
    }
-   @media only screen and (min-width: 300px) and (max-width: 500px) {
+   @media (min-width: 300px) and (max-width: 500px) {
      height: 2rem;
      width: 2rem;
      border-top-right-radius: 18px;
      border-bottom-right-radius: 18px;
+   }
+   @media (min-width: 1440px) {
+     border-top-right-radius: 18px;
+     border-bottom-right-radius: 18px;
+     height: 3rem;
+     width: 3rem;
    }
  `;
 

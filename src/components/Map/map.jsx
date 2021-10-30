@@ -11,7 +11,7 @@ const map = (props) => {
     const [viewport,setViewport]=React.useState({
       latitude:latitude,
       longitude:longitude,
-      zoom:10,
+      zoom:15,
       width:'100vw',
       height:'90vh'
     });

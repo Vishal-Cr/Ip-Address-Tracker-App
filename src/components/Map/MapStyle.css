@@ -14,19 +14,34 @@
 .top {
     display: none;
     padding: 0.2rem;
-
-
-    border-radius: 5px;
+   border-radius: 5px;
+   border:none;
+   width:7rem;
+   height:3rem;
+   margin:0 auto;
     z-index: 2;
-    background: #fff;
     font-weight: 600;
 }
 
 .top a {
     text-decoration: none;
-    color: #333;
-}
+    color: #fff;
+    height: 3rem;
+    width: 7rem;
+    }
 
+    @media only screen and (min-width: 800px) and (max-width:1440px) {
+        .map_container {
+            top: -12rem;
+        }
+
+        .map_pointer {
+            width: 2rem;
+            height: 2rem;
+
+        }
+
+    }
 @media only screen and (min-width: 500px) and (max-width:800px) {
 
     .map_container {
@@ -36,14 +51,13 @@
     .map_pointer {
         width: 1.5rem;
         height: 1.5rem;
-        position:fixed;
     }
 
 }
 
 @media only screen and (min-width: 300px) and (max-width:500px) {
     .map_container {
-        top: -20rem;
+        top: -8rem;
         bottom: 0;
         width: 100vw;
         height: 100vh;
@@ -53,13 +67,20 @@
     .map_pointer {
         width: 1rem;
         height: 1rem;
-        position:fixed;
+
     }
     .top {
         display: block;
-        margin: 0 auto;
         transition: all 0.5s ease;
         scroll-behavior: smooth;
-    }
+       background:blue;
+       padding:1rem;
+       left:50%;
+       position:relative;
+       bottom:30%;
+
+       }
+
+
 
 }
