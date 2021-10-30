@@ -49,7 +49,7 @@ const [mapViewport,setMapViewport]=React.useState({
         longitude:location['lng'],
       
       })
-      console.log(mapViewport);
+     
      }
    )
 .catch((e)=>console.log(e));
